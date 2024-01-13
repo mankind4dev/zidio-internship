@@ -27,15 +27,11 @@ export const signin = async (req, res, next) => {
     const { password: pass, ...rest } = validUser._doc;
     res
       .cookie("access_token", token, {
-        httpOnly: true
+        httpOnly: true,
       })
       .status(200)
       .json(rest);
-    const currentTIme = Date.now();
-    const oneDay = 24 * 60 * 60 * 1000;
-    const expireTime = currentTIme + oneDay;
-    const expireExactly = new Date(expireTime);
-    console.log(expireExactly)
+
   } catch (error) {
     next(error);
   }
