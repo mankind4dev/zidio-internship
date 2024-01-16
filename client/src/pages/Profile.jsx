@@ -19,8 +19,6 @@ import {
 } from "../redux/user/userSlice";
 import { useDispatch } from "react-redux";
 
-
-
 export default function Profile() {
   const fileRef = useRef(null);
 
@@ -64,10 +62,10 @@ export default function Profile() {
       () => {
         getDownloadURL(uploadTask.snapshot.ref).then((downloadURL) =>
           setFormData({ ...formData, avatar: downloadURL })
-        )
+        );
       }
-    )
-  }
+    );
+  };
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.id]: e.target.value });
@@ -146,7 +144,7 @@ export default function Profile() {
   const handleListingDelete = async (listingId) => {
     try {
       const res = await fetch(`/api/listing/delete/${listingId}`, {
-        method: 'DELETE',
+        method: "DELETE",
       });
       const data = await res.json();
       if (data.success === false) {
@@ -164,11 +162,8 @@ export default function Profile() {
 
   const handleListingUpdate = async (listingId) => {
     try {
-      
-    } catch (error) {
-      
-    }
-  }
+    } catch (error) {}
+  };
 
   return (
     <div className="p-3 max-w-lg mx-auto">
@@ -227,7 +222,7 @@ export default function Profile() {
           disabled={loading}
           className="bg-slate-700 text-white rounded-lg p-3 hover:opacit-95 disabled:opacity-80"
         >
-          {loading ? "Update" : "Loading..."}
+          {loading ? "Loading..." : "update"}
         </button>
         <Link
           className="bg-green-700 text-white p-3 rounded-lg uppercase text-center hover:opacity-95"
@@ -289,10 +284,12 @@ export default function Profile() {
                   Delete
                 </button>
                 <Link to={`/update-listing/${listing._id}`}>
-                <button 
-                  onClick={() => handleListingUpdate(listing._id)}
-                  className="text-green-700 uppercase"
-                >Edit</button>
+                  <button
+                    onClick={() => handleListingUpdate(listing._id)}
+                    className="text-green-700 uppercase"
+                  >
+                    Edit
+                  </button>
                 </Link>
               </div>
             </div>
