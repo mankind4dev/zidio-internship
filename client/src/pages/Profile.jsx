@@ -277,7 +277,7 @@ export default function Profile() {
               >
                 <p>{listing.name}</p>
               </Link>
-              <div className="flex flex-col item-center">
+              <div className="flex flex-col item-center gap-4">
                 <button
                   onClick={() => handleListingDelete(listing._id)}
                   className="text-red-700 uppercase"
