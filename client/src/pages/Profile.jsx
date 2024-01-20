@@ -19,6 +19,8 @@ import {
   signOutUserStart,
 } from "../redux/user/userSlice";
 import { useDispatch } from "react-redux";
+import { MdDelete, MdEdit } from 'react-icons/md'
+
 
 export default function Profile() {
   const fileRef = useRef(null);
@@ -282,14 +284,14 @@ export default function Profile() {
                   onClick={() => handleListingDelete(listing._id)}
                   className="text-red-700 uppercase"
                 >
-                  Delete
+                  <MdDelete />
                 </button>
                 <Link to={`/update-listing/${listing._id}`}>
                   <button
                     onClick={() => handleListingUpdate(listing._id)}
                     className="text-green-700 uppercase"
                   >
-                    Edit
+                    <MdEdit />
                   </button>
                 </Link>
               </div>
