@@ -48,6 +48,7 @@ export default function SignUp() {
         <input
           type="text"
           placeholder="Username"
+          required
           id="username"
           onChange={handleChange}
           className="border p-3 rounded-lg"
@@ -55,6 +56,7 @@ export default function SignUp() {
         <input
           type="email"
           placeholder="Email"
+          required
           id="email"
           onChange={handleChange}
           className="border p-3 rounded-lg"
@@ -62,6 +64,7 @@ export default function SignUp() {
         <input
           type="password"
           placeholder="Password"
+          required
           id="password"
           onChange={handleChange}
           className="border p-3 rounded-lg"
@@ -73,6 +76,7 @@ export default function SignUp() {
           {loading ? "Loading..." : "Sign Up"}
         </button>
         <OAuth />
+        required
       </form>
       <div className="flex gap-2 mt-5">
         <p className="">Have an account?</p>

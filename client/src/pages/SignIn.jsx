@@ -51,6 +51,7 @@ export default function SignIn() {
         <input
           type="email"
           placeholder="Email"
+          required
           id="email"
           onChange={handleChange}
           className="border p-3 rounded-lg"
@@ -58,6 +59,7 @@ export default function SignIn() {
         <input
           type="password"
           placeholder="Password"
+          required
           id="password"
           onChange={handleChange}
           className="border p-3 rounded-lg"
