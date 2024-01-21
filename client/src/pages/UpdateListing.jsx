@@ -266,7 +266,7 @@ export default function UpdateListing() {
                 max="10"
                 required
                 onChange={handleChange}
-                checked={formData.bedrooms}
+                value={formData.bedrooms}
                 className="p-3 border border-gray-300 rounded-lg"
               />
               <p className="">Beds</p>
@@ -279,7 +279,7 @@ export default function UpdateListing() {
                 max="10"
                 required
                 onChange={handleChange}
-                checked={formData.bathrooms}
+                value={formData.bathrooms}
                 className="p-3 border border-gray-300 rounded-lg"
               />
               <p className="">Bath</p>
@@ -292,7 +292,7 @@ export default function UpdateListing() {
                 max="1000000"
                 required
                 onChange={handleChange}
-                checked={formData.regularPrice}
+                value={formData.regularPrice}
                 className="p-3 border border-gray-300 rounded-lg"
               />
               <div className="flex flex-col items-center">
@@ -309,7 +309,7 @@ export default function UpdateListing() {
                 max="10000000"
                 required
                 onChange={handleChange}
-                checked={formData.discountPrice}
+                value={formData.discountPrice}
                 className="p-3 border border-gray-300 rounded-lg"
               />
               <div className="flex flex-col items-center">
