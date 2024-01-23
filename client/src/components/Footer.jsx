@@ -12,9 +12,9 @@ export default function Footer() {
   }
 
   return (
-    <footer className="flex items-center justify-center t-[100vh] font-bold text-sm sm:text-xl bg-slate-200 shadow-md w-ful p-4">
+    <footer className="flex items-center justify-center whitespace-nowrap t-[100vh] font-bold text-xs sm:text-xl bg-slate-200 shadow-md w-ful p-4">
       <div className="flex items-center justify-between max-w-6xl mx-auto">
-        <div className="flex">
+        <div className="hidden">
           <span className="text-slate-500">Real</span>
           <span className="text-slate-700">Castle.</span>
         </div>
