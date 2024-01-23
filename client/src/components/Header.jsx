@@ -67,7 +67,7 @@ export default function Header() {
                 className="rounded-full w-7 h-7 object-cover hover:p-0.5 object-transparent"
               />
             ) : (
-              <li className="sm:inline text-red-700 hover:underline">
+              <li className="sm:inline text-slate-700 hover:underline">
                 Sign-in
               </li>
             )}
