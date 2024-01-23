@@ -10,7 +10,7 @@ export default function Footer() {
       newWindow.opener = null
     }
   }
-  
+
   return (
     <footer className="flex items-center justify-center t-[100vh] font-bold text-sm sm:text-xl bg-slate-200 shadow-md w-ful p-4">
       <div className="flex items-center justify-between max-w-6xl mx-auto">
@@ -25,10 +25,10 @@ export default function Footer() {
           <Link onClick={() => linkToLinkedIn('https://www.linkedin.com/in/sunday-ogunmakin-9877751b7/')}>
             <p className="ml-3">
               Designed by{" "}
-              <span className="text-blue-700 font-bold text-sm sm:text-xl">
+              <span className="text-blue-700 font-bold text-sm sm:text-xl hover:underline">
                 Mankind
               </span>
-              <span className="text-[#FFD700] font-bold text-sm sm:text-xl">
+              <span className="text-[#FFD700] font-bold text-sm sm:text-xl hover:underline">
                 4dev
               </span>
             </p>
