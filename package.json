@@ -1,7 +1,7 @@
 {
   "name": "real-castle",
   "version": "1.0.0",
-  "description": "",
+  "description": "I dedicate my time in creating a website for my State Local Government. Real Castle is a popular online real estate marketplace that provides information about homes, real estate listings, mortgages, and home improvement tools. The RealCastle website allow users to search for homes, apartments, and other real estate properties based on various criteria such as location, price range, and property type. RealCastle also provides estimates of property values, which are calculated using a proprietary formula based on public data and user-submitted data.",
   "main": "index.js",
   "type": "module",
   "scripts": {
