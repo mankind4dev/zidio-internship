@@ -73,9 +73,10 @@ info {
     padding-left: 5px;
     font-size: 20px;
     color: white;
-    background: linear-gradient(500deg, #FDD700, #fffb7d, blue);
+    background: linear-gradient(500deg, #FDD700, rgb(22, 22, 106), blue);
     background-clip: text;
     color: transparent;
+    
   }
   .text p {
     font-size: 20px;

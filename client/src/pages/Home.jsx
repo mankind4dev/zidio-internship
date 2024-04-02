@@ -22,7 +22,7 @@ export default function Home() {
         <div className="flex flex-col justify-center gap-4 sm:flex-col">
           <div className="">
             {currentUser && (
-              <div className="flex flex-col p-5 border-4 w-[50%] h-[50%]">
+              <div className="flex flex-col p-5 border-4 w-[50%] h-[50%] sm:w-full sm:h-full">
                 <h1 className="flex text-3xl font-bold justify-center">
                   Location of the user
                 </h1>

@@ -25,6 +25,7 @@ export default function Home() {
     <>
       <div className="flex flex-col p-28 px-3 max-w-6xl mx-auto">
         <div className="flex flex-col max-w-lg ">
+          <h1 className="color">ZIDIO INTERNSHIP</h1>
           <p className="text-lg text-gray-500 font-bold">
             At Zidio, we believe in the power of innovation and creativity to
             transform the world.

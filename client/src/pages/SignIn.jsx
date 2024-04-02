@@ -47,6 +47,7 @@ export default function SignIn() {
   return (
     <div className="p-3 max-w-lg mx-auto">
       <h1 className="text-3xl text-center font-semibold my-7">Sign In</h1>
+      <p className="text-lg text-center font-semibold my-7">Welcom back to Zidio 🤩</p>
       <form onSubmit={handleSubmit} className="flex flex-col gap-4">
         <input
           type="email"
