@@ -21,6 +21,6 @@ const userSchema = new mongoose.Schema({
     },
 }, { timestamps: true });
 
-const User = mongoose.model("User", userSchema);
+const Zidio = mongoose.model("Zidio", userSchema);
 
-export default User;
+export default Zidio;
